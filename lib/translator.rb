@@ -32,7 +32,7 @@ emoticon_hash = load_library(path)
 
 emoticon_result = emoticon_hash.each do |key, key_2|
    binding.pry
-  emoticon_hash[key][:english] == emoticon
+  emoticon_hash[key_2][:english] == emoticon
 
 end
 

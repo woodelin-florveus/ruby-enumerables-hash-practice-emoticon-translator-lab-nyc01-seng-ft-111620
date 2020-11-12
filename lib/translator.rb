@@ -32,7 +32,7 @@ emoticon_hash = load_library(path)
 
 emoticon_result = emoticon_hash.keys.find do |key|
 
-  emoticon_hash[key][0][:english] == emoticon
+  emoticon_hash[key][1][:english] == emoticon
 end
 
 

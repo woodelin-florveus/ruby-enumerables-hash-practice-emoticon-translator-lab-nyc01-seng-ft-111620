@@ -32,7 +32,7 @@ emoticon_hash = load_library(path)
 
 emoticon_result = emoticon_hash.keys.find do |key|
 
-  emoticon_hash[key][:english] == emoticon[1]
+  emoticon_hash[key][:english] == emoticon
 end
 
 
@@ -44,7 +44,7 @@ end
 def get_english_meaning(path, emoticon)
 
   emoticon_hash = load_library(path)
-  emoticon_result = emoticon_hash.find do |key|
+  emoticon_result = emoticon_hash.keys.find do |key|
 
     emoticon_hash[key][:japanese] == emoticon
   end

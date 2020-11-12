@@ -18,8 +18,8 @@ def load_library(path)
     # emoticon_hash["get_emoticon"][emoticon.first] = emoticon.last
     # emoticon_hash["the_meaning"][emoticon.last] = english_meaning
     emoticon_hash[english_meaning][:japanese] = emoticon[1]
-    emoticon_hash[emoticon][:english] = emoticon[0]
-    # binding.pry
+    emoticon_hash[english_meaning][:english] = emoticon[0]
+    binding.pry
 
 
   end
@@ -31,7 +31,7 @@ def get_japanese_emoticon(path, emoticon)
 emoticon_hash = load_library(path)
 
 emoticon_result = emoticon_hash.keys.find do |key|
-  emoticon_hash[key][:english] == emoticon[0]
+  emoticon_hash[key][:english] == emoticon[1]
   # binding.pry
 end
 

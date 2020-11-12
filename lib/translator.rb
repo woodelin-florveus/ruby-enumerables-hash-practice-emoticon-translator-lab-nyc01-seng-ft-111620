@@ -31,7 +31,7 @@ def get_japanese_emoticon(path, emoticon)
 emoticon_hash = load_library(path)
 
 emoticon_result = emoticon_hash.keys.find do |key|
-  emoticon_hash[key][:english] == emoticon_hash[emoticon]
+  emoticon_hash[key][:english] == keyt
 
 end
 

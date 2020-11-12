@@ -18,7 +18,7 @@ def load_library(path)
     # emoticon_hash["get_emoticon"][emoticon.first] = emoticon.last
     # emoticon_hash["the_meaning"][emoticon.last] = english_meaning
     emoticon_hash[english_meaning][:japanese] = emoticon[1]
-    emoticon_hash[english_meaning][:english] = emoticon[0]
+    emoticon_hash[emoticon][:english] = emoticon[0]
     binding.pry
 
 

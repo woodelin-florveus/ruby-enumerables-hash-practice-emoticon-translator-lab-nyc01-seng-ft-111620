@@ -37,7 +37,7 @@ end
 
 
   emoticon_result ? emoticon_result : "Sorry, that emoticon was not found"
-
+  emoticon_result
 end
 
 
